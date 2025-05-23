@@ -9,5 +9,6 @@ export default {
   ],
   watchPathIgnorePatterns: [
     "<rootDir>/node_modules/"
-  ]
+  ],
+  setupFilesAfterEnv: ['<rootDir>/jest-setup.js']
 };
