@@ -81,4 +81,19 @@ export default {
       });
     }
   }),
+
+  put: jest.fn((url, appointment) => {
+    return Promise.resolve({
+      status: 204,
+      statusText: "No Content",
+      data: appointment, // Optional: returning the modified appointment object back
+    });
+  }),
+
+  delete: jest.fn(() => {
+    return Promise.resolve({
+      status: 204,
+      statusText: "No Content",
+    });
+  }),
 };

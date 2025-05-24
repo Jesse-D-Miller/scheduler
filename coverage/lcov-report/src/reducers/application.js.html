@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">33.33% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>5/15</span>
+                <span class='fraction'>15/15</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">10% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>1/10</span>
+                <span class='fraction'>10/10</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">25% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/4</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">33.33% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>5/15</span>
+                <span class='fraction'>15/15</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -117,41 +117,41 @@
 <a name='L52'></a><a href='#L52'>52</a>
 <a name='L53'></a><a href='#L53'>53</a>
 <a name='L54'></a><a href='#L54'>54</a>
-<a name='L55'></a><a href='#L55'>55</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L55'></a><a href='#L55'>55</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -159,7 +159,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -177,35 +177,35 @@ export const SET_INTERVIEW = "SET_INTERVIEW";
 &nbsp;
 export default function reducer(state, action) {
   switch (action.type) {
-<span class="branch-0 cbranch-no" title="branch not covered" >    case SET_DAY:</span>
-<span class="cstat-no" title="statement not covered" >      return { ...state, day: action.day };</span>
-<span class="branch-1 cbranch-no" title="branch not covered" >    case SET_APPLICATION_DATA:</span>
-<span class="cstat-no" title="statement not covered" >      return {</span>
+    case SET_DAY:
+      return { ...state, day: action.day };
+    case SET_APPLICATION_DATA:
+      return {
         ...state,
         days: action.days,
         appointments: action.appointments,
         interviewers: action.interviewers
       };
-<span class="branch-2 cbranch-no" title="branch not covered" >    case SET_INTERVIEW: {</span>
-      const appointment = <span class="cstat-no" title="statement not covered" >{</span>
+    case SET_INTERVIEW: {
+      const appointment = {
         ...state.appointments[action.id],
         interview: action.interview &amp;&amp; { ...action.interview }
       };
 &nbsp;
-      const appointments = <span class="cstat-no" title="statement not covered" >{</span>
+      const appointments = {
         ...state.appointments,
         [action.id]: appointment
       };
 &nbsp;
-      const getSpotsForDay = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >da</span>y =&gt;</span>
-<span class="cstat-no" title="statement not covered" >        day.appointments.length -</span>
+      const getSpotsForDay = day =&gt;
+        day.appointments.length -
         day.appointments.reduce(
-<span class="fstat-no" title="function not covered" >          (c</span>ount, id) =&gt; (<span class="cstat-no" title="statement not covered" >appointments[id].interview ? count + 1 : count)</span>,
+          (count, id) =&gt; (appointments[id].interview ? count + 1 : count),
           0
         );
 &nbsp;
-      const days = <span class="cstat-no" title="statement not covered" >state.days.map(<span class="fstat-no" title="function not covered" >da</span>y =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >        return day.appointments.includes(action.id)</span>
+      const days = state.days.map(day =&gt; {
+        return day.appointments.includes(action.id)
           ? {
               ...day,
               spots: getSpotsForDay(day)
@@ -213,7 +213,7 @@ export default function reducer(state, action) {
           : day;
       });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      return {</span>
+      return {
         ...state,
         appointments,
         days
@@ -232,7 +232,7 @@ export default function reducer(state, action) {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-05-23T00:39:39.351Z
+                at 2025-05-24T01:01:20.126Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
